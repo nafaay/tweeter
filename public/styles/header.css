@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  background-color: rosybrown;
+  height: 400px;
+  width: 100%;
+  margin-top: 60px;
+}
+
+.contImage {
+  height: 80px;
+}
+
+

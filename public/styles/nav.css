@@ -1,0 +1,38 @@
+
+nav {
+  display: flex;
+  top:0%;
+  height: 120px;
+  width: 100%;
+  background-color: #4056A1;
+  color: #FFFFFF;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 2em;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1;
+
+}
+
+nav span{
+  font-family: 'Bungee', cursive, sans-serif;
+}
+
+.container1 {
+  display: flex;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.container3 {
+  align-items: flex-end;
+}
+.angle {
+  text-align: center;
+  color:gold;
+}
+

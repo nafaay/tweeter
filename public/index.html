@@ -9,21 +9,78 @@
 
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+    <!-- Google fonts -->
+
+  <link  href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300&display=swap"
+    rel="stylesheet">
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <!-- Fonts Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <span>tweeter</span>
-    </nav>
+      <nav>
+          <div class="container1">
+            <span>tweeter</span>
+          </div>
+          <div class="container2">
+            <div class="container3">Write a new tweet</div>
+            <div class="angle">
+              <i class="fas fa-angle-double-down"></i>
+            </div>
+          </div>
+      </nav>
+      <!-- Header content -->
+      <br>
+      <header>
+        <div class="contImage">
+          <img src="/images/profile-hex.png">
+        </div>
+        <br>
+        <div class="contName">
+          <h4>Youssef Nafaa</h4>
+        </div>
+      </header>
+    <!-- Page-specific (main) content -->
 
-    <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="new-tweet">
+        <h3>Compose Tweet</h3>
+        <form action="/tweets" method="POST">
+          <label for="tweet-text" style="font-weight: bold;">What are you humming about?</label>
+          <textarea name="text" cols="140" rows = "1" id="tweet-text"></textarea>
+          <div class="btn_output">
+            <button type="submit" class="button" id="btn"><b>Tweet</b></button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>    
+      <br>
+      <article>
+        <header>
+          <p>I have seen a lot from that that I can do something like that</p>
+        </header>
+        <footer>
+          <div>10 days ago</div>
+          <div>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-flag"></i>
+            <i class="fab fa-twitter"></i>
+          </div>
+        </footer>
+      </article>
+    </main>
+    <br>
+ 
   </body>
 </html>

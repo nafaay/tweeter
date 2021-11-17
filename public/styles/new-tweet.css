@@ -27,3 +27,19 @@
 .counter{
   font-weight: bold;
 }
+
+.avname{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 0.2rem;  
+}
+
+.avnamehandle{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%;
+}
+

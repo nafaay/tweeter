@@ -17,6 +17,9 @@ body header {
   height: 80px;
 }
 
+.tweet{
+  padding-left: 1rem;
+}
 article header{
   padding-top: 0;
 }

@@ -46,7 +46,7 @@
       <br>
       <header>
         <div class="contImage">
-          <img src="/images/profile-hex.png">
+          <img src="https://avatars.dicebear.com/api/personas/wwwwwwwwur-custom-seed.svg">
         </div>
         <br>
         <div class="contName">
@@ -58,6 +58,8 @@
     <main class="container">
       <section class="new-tweet">
         <h3>Compose Tweet</h3>
+        <p class="error long">Text too long please do not exceed 140 characters</p>
+        <p class="error empty">Text empty, you have nothing to say???</p>
         <form action="/tweets" method="POST">
           <label for="tweet-text" style="font-weight: bold;">What are you humming about?</label>
           <textarea name="text" cols="140" rows = "1" id="tweet-text"></textarea>

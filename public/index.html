@@ -3,6 +3,7 @@
   <head>
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
@@ -16,7 +17,7 @@
 
     <!-- Google fonts -->
 
-  <link  href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300&display=swap"
+    <link  href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300&display=swap"
     rel="stylesheet">
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -43,8 +44,9 @@
           </div>
       </nav>
       <!-- Header content -->
-      <br>
-      <header>
+      <br><br>
+    <main class="container">
+      <header id="body-header">
         <div class="contImage">
           <img src="https://avatars.dicebear.com/api/personas/wwwwwwwwur-custom-seed.svg">
         </div>
@@ -54,23 +56,23 @@
         </div>
       </header>
     <!-- Page-specific (main) content -->
-
-    <main class="container">
-      <section class="new-tweet">
-        <h3>Compose Tweet</h3>
-        <p class="error long">Text too long please do not exceed 140 characters</p>
-        <p class="error empty">Text empty, you have nothing to say???</p>
-        <form action="/tweets" method="POST">
-          <label for="tweet-text" style="font-weight: bold;">What are you humming about?</label>
-          <textarea name="text" cols="140" rows = "1" id="tweet-text"></textarea>
-          <div class="btn_output">
-            <button type="submit" class="button" id="btn"><b>Tweet</b></button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-      </section>    
-      <br>
-      <section id="tweets-container">
+      <section id="all-tweets">
+        <section class="new-tweet">
+          <h3>Compose Tweet</h3>
+          <p class="error long">Text too long please do not exceed 140 characters</p>
+          <p class="error empty">Text empty, you have nothing to say???</p>
+          <form action="/tweets" method="POST">
+            <label for="tweet-text" style="font-weight: bold;">What are you humming about?</label>
+            <textarea name="text" cols="140" rows = "1" id="tweet-text"></textarea>
+            <div class="btn_output">
+              <button type="submit" class="button" id="btn"><b>Tweet</b></button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </section>    
+        <br>
+        <section id="tweets-container">
+        </section>
       </section>
     </main>
   </body>

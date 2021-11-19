@@ -2,9 +2,15 @@ footer {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding:  2rem;
+  padding:  1rem;
   border-top: 3px solid black;
   background-color: #f4f1ec;
   width: 90%;
 }
 
+.fontawesome{
+  width: 10%;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+}

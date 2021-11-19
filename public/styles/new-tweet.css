@@ -37,9 +37,7 @@
 .avnamehandle{
   display: flex;
   justify-content: space-between;
-  padding-top: 0.2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem;
   width: 100%;
 }
 

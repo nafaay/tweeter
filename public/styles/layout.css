@@ -22,15 +22,11 @@ body {
 }
 
 .container{
+  display: flex;
   width: 90%;
   margin: 0 auto;
   background-color:  #f4f1ec;
 }
-
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
 
 
 #tweets-container{
@@ -41,5 +37,5 @@ body {
 
 .error{
   color: red;
+  font-weight: bold;
 }
-

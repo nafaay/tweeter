@@ -4,7 +4,6 @@ const renderTweets = function(tweets) {
     const $tweet = createTweetElement(tweets[i]);
     $('#tweets-container').append($tweet);
     $('#tweets-container').append('<br>');
-
   }
 };
 
@@ -71,6 +70,7 @@ $(document).ready(function() {
     });
     // Clear textarea after submitting tweet.
     $('#tweet-text').val("");
+    $('.counter').text('140'); 
     
     const $colorElement = $('.fa-heart').css('color');
     $('.fa-heart').hover(function() {
@@ -99,11 +99,10 @@ $(document).ready(function() {
    */
   $('.error').hide();
   const BASE_URL = "http://localhost:8080/tweets";
-  let data = [];
   $.ajax(BASE_URL, {
     "user": "user", "content": "content", "created_at": "created_at"
   })
-    .done(function(dataTweets) {
+  .done(function(dataTweets) {
       data = dataTweets;
       renderTweets(data);
       manipulateDOM();
@@ -142,6 +141,7 @@ $(document).ready(function() {
           });
           renderTweets(data.reverse());
           manipulateDOM();
+          document.cookie = data;
         }
       });
     });
